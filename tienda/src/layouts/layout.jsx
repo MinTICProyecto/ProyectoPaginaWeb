@@ -1,9 +1,10 @@
-import Productos from "../pages/productos"
+import Navbar from "../components/Navbar";
 
 
 const Layout = ({children}) =>{
   return(
      <div>
+         <Navbar/>
 
          <main>
              {children}

@@ -22,13 +22,13 @@ const Inicio = () => {
                         <Stack component="form" sx={{ '& .MuiTextField-root': { m: 3, width: '100ch' }, alignItems: "center", paddingTop: 5 }}>
                             <TextField label="Escriba su correo" variant="outlined" />
                             <TextField label="Escriba contrasena" type="password" variant="outlined" />
-                            <Link to="/">
+                            <Link to="/productos">
                             <Button variant="contained" size="50" color="success" sx={{fontSize:17}}> Iniciar Sesion</Button>
                             </Link>
                             <Typography gutterBottom variant="h6" component="div" sx={{paddingTop:2, paddingBottom:2}}>
                                 O
                             </Typography>
-                            <Link to="/">
+                            <Link to="/productos">
                             <Button variant="contained" endIcon={<GoogleIcon />} color="warning" size="50" sx={{fontSize:17}}> Google</Button>
                             </Link>
                         </Stack>
