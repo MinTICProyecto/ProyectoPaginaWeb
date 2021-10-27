@@ -1,8 +1,26 @@
+
+import { BrowserRouter as Router, Switch, Route} from 'react-router-dom';
+import LayoutLogion from "./layouts/layoutlogin";
 import Inicio from "./pages/inicio";
 
 function App() {
   return (
-    <Inicio/>
+    <Router>
+      <Switch>
+       <Route path='/' exact>
+         <LayoutLogion>
+           <Route path='/login'>
+           </Route>
+         </LayoutLogion>
+       </Route>
+
+
+
+
+
+
+      </Switch>
+    </Router>
   );
 }
 

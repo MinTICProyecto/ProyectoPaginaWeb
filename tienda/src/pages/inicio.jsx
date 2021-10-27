@@ -7,6 +7,7 @@ import Typography from '@mui/material/Typography';
 import Stack from "@mui/material/Stack";
 import GoogleIcon from '@mui/icons-material/Google';
 import "../styles/inicio.css";
+import {Link} from 'react-router-dom';
 
 const Inicio = () => {
     return (
@@ -21,11 +22,15 @@ const Inicio = () => {
                         <Stack component="form" sx={{ '& .MuiTextField-root': { m: 3, width: '100ch' }, alignItems: "center", paddingTop: 5 }}>
                             <TextField label="Escriba su correo" variant="outlined" />
                             <TextField label="Escriba contrasena" type="password" variant="outlined" />
+                            <Link to="/">
                             <Button variant="contained" size="50" color="success" sx={{fontSize:17}}> Iniciar Sesion</Button>
+                            </Link>
                             <Typography gutterBottom variant="h6" component="div" sx={{paddingTop:2, paddingBottom:2}}>
                                 O
                             </Typography>
+                            <Link to="/">
                             <Button variant="contained" endIcon={<GoogleIcon />} color="warning" size="50" sx={{fontSize:17}}> Google</Button>
+                            </Link>
                         </Stack>
                     </CardContent>
                 </Card>
