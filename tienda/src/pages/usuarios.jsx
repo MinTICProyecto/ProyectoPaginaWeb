@@ -5,23 +5,24 @@ import { Box, Typography, TextField } from "@mui/material"
 import Button from "@mui/material/Button";
 
 
-const Productos = () => {
+const Usuarios= () => {
 
     const data = [
-        { _id: '001', descripcion: 'Producto 1', vunitario: 120000, estado: 'Disponible' },
-        { _id: '002', descripcion: 'Producto 2', vunitario: 20000, estado: 'No Disponible' },
-        { _id: '003', descripcion: 'Producto 3', vunitario: 200000, estado: 'Disponible' }
+        { _id: '001', nombre: 'Albert Einstein', rol: 'Administrador', estado: 'Autorizado' },
+        { _id: '002', nombre: 'Isaac Newton', rol: 'Administrador', estado: 'Autorizado' },
+        { _id: '003', nombre: 'Stephen Hawking', rol: 'Administrador', estado: 'Autorizado' },
+        { _id: '003', nombre: 'Pepito Perez', rol: 'Pendiente', estado: 'No Autorizado' }
 
     ];
 
     return (
         <div>
             <Typography color="black" > 
-            <Box sx={{ flexGrow: 1, textAlign: "center", paddingTop: "2vh", fontSize:30, fontWeight:"bold" }}>PRODUCTOS</Box> </Typography>
+            <Box sx={{ flexGrow: 1, textAlign: "center", paddingTop: "2vh", fontSize:30, fontWeight:"bold" }}>USUARIOS</Box> </Typography>
             
             <Box sx={{ display: "flex", justifyContent: "left", paddingTop: "5vh" }}>
             <Typography variant="h6" color="black" sx={{ marginLeft:"20%", marginRight:"20px"}}>   
-            <Box>Buscar Producto </Box>
+            <Box>Buscar Usuario </Box>
             </Typography>
             <TextField id="busqueda" variant="standard"  style={{size:50, fontSize:50}}/>
             </Box>
@@ -32,9 +33,9 @@ const Productos = () => {
                     <thead style={{ textAlign: "center" }}>
                         <tr>
                             <th>ID</th>
-                            <th>Descripcion</th>
-                            <th>Valor Unitario</th>
-                            <th>Estados</th>
+                            <th>Nombre</th>
+                            <th>Rol</th>
+                            <th>Estado</th>
                             <th>Acciones</th>
                         </tr>
                     </thead>
@@ -43,8 +44,8 @@ const Productos = () => {
                             data.map((info) => (
                                 <tr>
                                     <td>{info._id}</td>
-                                    <td>{info.descripcion}</td>
-                                    <td>{info.vunitario}</td>
+                                    <td>{info.nombre}</td>
+                                    <td>{info.rol}</td>
                                     <td>{info.estado}</td>
                                     <td>
                                         <div style={{ width: "100%", justifyContent: "center", display: "inline-flex", columnGap: 20 }}>
@@ -60,10 +61,10 @@ const Productos = () => {
             </Box>
 
             <Box sx={{ display: "flex", justifyContent: "center", paddingTop: "5vh" }}>
-            <Button variant="contained" color="primary" sx={{ fontSize: 17, }}> CREAR PRODUCTO</Button>
+            <Button variant="contained" color="primary" sx={{ fontSize: 17, }}> CREAR USUARIO</Button>
             </Box>
         </div>
     )
 }
 
-export default Productos;
+export default Usuarios;

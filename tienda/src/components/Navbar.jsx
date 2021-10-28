@@ -1,4 +1,4 @@
-import { AppBar, Divider, IconButton, Toolbar, Typography, List } from "@mui/material";
+import { AppBar, IconButton, Toolbar, Typography } from "@mui/material";
 import MenuIcon from "@mui/icons-material/Menu";
 import AccountCircleIcon from '@mui/icons-material/AccountCircle';
 import { useState } from "react";
@@ -26,7 +26,7 @@ const Navbar = () => {
                 </IconButton>
             </Toolbar>
         </AppBar>
-        <Sidebar menu={menu} setMenu={setMenu} altura={altura}/>
+        <Sidebar menu={menu} setMenu={setMenu}/>
         </div>
  
     )
