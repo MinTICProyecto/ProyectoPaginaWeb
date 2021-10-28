@@ -15,13 +15,16 @@ const Ventas = () => {
     ];
 
     return (
+
         <div>
             <Typography color="black" > 
             <Box sx={{ flexGrow: 1, textAlign: "center", paddingTop: "2vh", fontSize:30, fontWeight:"bold" }}>VENTAS</Box> </Typography>
             
             <Box sx={{ display: "flex", justifyContent: "left", paddingTop: "5vh" }}>
             <Typography variant="h6" color="black" sx={{ marginLeft:"20%", marginRight:"20px"}}>   
-            <Box>Buscar Venta </Box>
+            <Box
+            
+            >Buscar Venta </Box>
             </Typography>
             <TextField id="busqueda" variant="standard"  style={{size:50, fontSize:50}}/>
             </Box>

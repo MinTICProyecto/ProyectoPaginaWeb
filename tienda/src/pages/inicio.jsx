@@ -28,7 +28,7 @@ const Inicio = () => {
                             <Typography gutterBottom variant="h6" component="div" sx={{paddingTop:2, paddingBottom:2}}>
                                 O
                             </Typography>
-                            <Link to="/" style={{textDecoration:"none"}}>
+                            <Link to="/productos" style={{textDecoration:"none"}}>
                             <Button variant="contained" endIcon={<GoogleIcon />} color="warning" size="50" sx={{fontSize:17}}> Google</Button>
                             </Link>
                         </Stack>

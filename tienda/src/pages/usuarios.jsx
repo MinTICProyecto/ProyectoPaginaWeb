@@ -49,7 +49,6 @@ const Usuarios= () => {
                                     <td>{info.estado}</td>
                                     <td>
                                         <div style={{ width: "100%", justifyContent: "center", display: "inline-flex", columnGap: 20 }}>
-                                            <Button variant="contained" color="error" sx={{ fontSize: 13 }}> Eliminar</Button>
                                             <Button variant="contained" color="success" sx={{ fontSize: 13 }}> Editar</Button>
                                         </div>
                                     </td>
