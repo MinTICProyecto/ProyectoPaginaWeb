@@ -1,11 +1,11 @@
 import Navbar from "../components/Navbar";
+import '../styles/layout.css'
 
 
 const Layout = ({children}) =>{
   return(
-     <div>
+     <div className="contenedorP">
          <Navbar/>
-
          <main>
              {children}
          </main>

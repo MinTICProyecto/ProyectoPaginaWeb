@@ -1,0 +1,11 @@
+.contenedorP{
+    flex-direction: column;
+    overflow: hidden;
+    margin: 0%;
+}
+.contenedorP > main {
+    height: 91vh;
+    width: 100%;
+    
+    align-items: center;
+}

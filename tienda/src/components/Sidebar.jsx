@@ -2,6 +2,7 @@ import { Divider, IconButton, Typography, List } from "@mui/material";
 import Drawer from '@mui/material/Drawer';
 import { useTheme } from "@emotion/react";
 import CloseIcon from '@mui/icons-material/Close';
+import { fontSize } from "@mui/system";
 
 
 const Sidebar = ({menu, setMenu, altura}) => {
@@ -12,11 +13,8 @@ const Sidebar = ({menu, setMenu, altura}) => {
         <Drawer  sx={{
             width: 250,
             flexShrink: 0,
-             '.MuiDrawer-root':{
-                paddingTop:100,
-               height: 100,
-             },
              '& .MuiDrawer-paper': {
+                backgroundColor:"#64C7F2",
                  marginTop: 9,
                  boxSizing: 'border-box',
                  height: '91%',
@@ -27,13 +25,10 @@ const Sidebar = ({menu, setMenu, altura}) => {
           }}
           variant="persistent"
           anchor="left"
-          open={menu}
-          >
-            <IconButton onClick={()=>{setMenu(false)}}>
-                {theme.direction === 'ltr' ? <CloseIcon /> : <CloseIcon />}
-            </IconButton>
+          open={menu}>
             <Divider/>
             <List>
+                
 
             </List>
         </Drawer>

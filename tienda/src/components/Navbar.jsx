@@ -17,7 +17,7 @@ const Navbar = () => {
         <div>
         <AppBar position="static">
             <Toolbar sx={{ backgroundColor: "#75FCF2" }}>
-                <IconButton size="large" edge="start" color="default" aria-label="menu" sx={{ mr: 2, height:altura}} onClick={()=>{openSidebar()}} >
+                <IconButton size="large" edge="start" color="default" aria-label="menu" sx={{ mr: 2, height:altura}} onClick={()=>{menu != true ? openSidebar(): closeSidebar()}} >
                     <MenuIcon fontSize="large" />
                 </IconButton>
                 <Typography variant="h5" color="black" component="div" sx={{ flexGrow: 1 }}> Sistema de Ventas</Typography>
